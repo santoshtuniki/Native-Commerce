@@ -89,7 +89,7 @@ Follow instruction mentioned in 'Getting Started'.
     Take keys from 
     
         Task :app:signingReport
-        Variant: debug
+        Variant: debugAndroidTest
     
     Copy both **SHA1** and **SHA-256** keys that belong to the 'debugAndroidTest' variant key option. 
 
