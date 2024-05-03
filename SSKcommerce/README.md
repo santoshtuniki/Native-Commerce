@@ -45,3 +45,9 @@ It is available to all screen components (components defined as screens in route
 -----
 
 [React-native-firebase](https://github.com/santoshtuniki/Firebase-Setup/tree/main)
+
+-----
+
+### Toast Message
+
+    npm i react-native-toast-message

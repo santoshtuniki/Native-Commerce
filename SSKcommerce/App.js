@@ -2,6 +2,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Toast from 'react-native-toast-message';
 
 // util imports
 import { SCREEN } from './src/utils';
@@ -14,13 +15,16 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
     return (
-        <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name={SCREEN.SPLASH} component={SplashScreen} options={{ headerShown: false }} />
-                <Stack.Screen name={SCREEN.SIGNIN} component={SignInScreen} options={{ headerShown: false }} />
-                <Stack.Screen name={SCREEN.SIGNUP} component={SignUpScreen} options={{ headerShown: false }} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <>
+            <NavigationContainer>
+                <Stack.Navigator>
+                    <Stack.Screen name={SCREEN.SPLASH} component={SplashScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name={SCREEN.SIGNIN} component={SignInScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name={SCREEN.SIGNUP} component={SignUpScreen} options={{ headerShown: false }} />
+                </Stack.Navigator>
+            </NavigationContainer>
+            <Toast />
+        </>
     );
 };
 

@@ -4,3 +4,11 @@ export enum SCREEN {
     SIGNIN = 'SignIn',
     SIGNUP = 'SignUp',
 }
+
+export enum TOAST {
+    SUCCESS = 'success',
+    ERROR = 'error',
+    INFO = 'info',
+    TOP = 'top',
+    BOTTOM = 'bottom',
+}
