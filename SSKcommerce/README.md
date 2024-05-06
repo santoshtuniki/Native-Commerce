@@ -48,6 +48,9 @@ It is available to all screen components (components defined as screens in route
 
 -----
 
-### Toast Message
-
     npm i react-native-toast-message
+
+    npm i react-native-animated-spinkit
+
+    npm i axios
+

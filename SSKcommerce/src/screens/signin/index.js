@@ -5,6 +5,7 @@ import {
     View,
     Image,
     Text,
+    StatusBar,
 } from 'react-native';
 
 // util imports
@@ -31,6 +32,7 @@ export const SignInScreen = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
+            <StatusBar backgroundColor={COLOR.White} />
             <View style={styles.box}>
                 <Image
                     source={require('../../assets/welcome.jpg')}
