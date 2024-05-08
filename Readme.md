@@ -149,10 +149,6 @@ It is available to all screen components (components defined as screens in route
 
 -----
 
-### Google authentication using react-native firebase
-
------
-
 ### Build and Deploy APK
 
 Add **assets** floder in **android/app/src/main**
