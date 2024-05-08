@@ -88,7 +88,7 @@
 
     npm install react-native-screens react-native-safe-area-context
 
-### react-native-screens package requires one additional configuration step to properly work on Android devices. 
+#### react-native-screens package requires one additional configuration step to properly work on Android devices. 
 
 1) Edit MainActivity.kt or MainActivity.java file which is located under **android/app/src/main/java/package_name/**.
 
