@@ -150,3 +150,27 @@ It is available to all screen components (components defined as screens in route
 -----
 
 ### Google authentication using react-native firebase
+
+-----
+
+### Build and Deploy APK
+
+Add **assets** floder in **android/app/src/main**
+
+    npm install react-native-cli
+
+    npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+    cd android
+
+    ./gradlew assembleRelease
+
+Find **release.apk** file which u can install in your device at **cd app/build/outputs/apk/release/**
+
+Tto clean the build and update the build 
+
+    ./gradlew clean 
+    
+    ./gradlew assembleRelease
+
+Find **debug.apk** file which u can install in your device for debugging at **cd app/build/outputs/apk/debug/**
